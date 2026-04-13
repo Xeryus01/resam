@@ -1,0 +1,1222 @@
+{
+  "pengeluaran": [
+    {
+      "Tanggal": "16-Mei-2023",
+      "Uraian": "Dana resam (TK Mei 2024)",
+      "Rincian": "nan",
+      "Kredit": 3475000,
+      "Debit": 0,
+      "Saldo": 3475000
+    },
+    {
+      "Tanggal": "16-Mei-2023",
+      "Uraian": "Konsumsi Bubur Kacang Ijo",
+      "Rincian": "400000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3475000
+    },
+    {
+      "Tanggal": "16-Mei-2023",
+      "Uraian": "Konsumsi Gorengan",
+      "Rincian": "300000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3475000
+    },
+    {
+      "Tanggal": "16-Mei-2023",
+      "Uraian": "Air Mineral 2 Dus",
+      "Rincian": "42000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3475000
+    },
+    {
+      "Tanggal": "16-Mei-2023",
+      "Uraian": "Gelas Plastik",
+      "Rincian": "20000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3475000
+    },
+    {
+      "Tanggal": "16-Mei-2023",
+      "Uraian": "Kegiatan Jumat Bersih 17 Mei 2024",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 762000,
+      "Saldo": 2713000
+    },
+    {
+      "Tanggal": "17-Mei-2024",
+      "Uraian": "Dana resam (TK Mei 2024)",
+      "Rincian": "nan",
+      "Kredit": 100000,
+      "Debit": 0,
+      "Saldo": 2813000
+    },
+    {
+      "Tanggal": "12-Juni-2024",
+      "Uraian": "Dana resam (TK Juni 2024)",
+      "Rincian": "nan",
+      "Kredit": 3625000,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "17-Juni-2024",
+      "Uraian": "Bumbu pecel",
+      "Rincian": "640000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "01-Juli-2024",
+      "Uraian": "Telur",
+      "Rincian": "200000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "01-Juli-2024",
+      "Uraian": "Paper cup, sendok makan, sarung tangan",
+      "Rincian": "62000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "02-Juli-2024",
+      "Uraian": "Alas Daun Pisang",
+      "Rincian": "50000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "05-Juli-2024",
+      "Uraian": "Buah Pisang",
+      "Rincian": "110000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "05-Juli-2024",
+      "Uraian": "Spanduk",
+      "Rincian": "200000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6438000
+    },
+    {
+      "Tanggal": "05-Juli-2024",
+      "Uraian": "Kegiatan Bedulang 5 Juli 2024",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1262000,
+      "Saldo": 5176000
+    },
+    {
+      "Tanggal": "18-Juli-2024",
+      "Uraian": "Dana resam (TK Juli 2024)",
+      "Rincian": "nan",
+      "Kredit": 3625000,
+      "Debit": 0,
+      "Saldo": 8801000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Konsumsi Gorengan",
+      "Rincian": "500000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 8801000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Konsumsi Rebusan",
+      "Rincian": "360000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 8801000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Minum Es Sirup, The, dan Kopi",
+      "Rincian": "172000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 8801000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Air Mineral 5 Dus",
+      "Rincian": "114000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 8801000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Cangkir Plastik",
+      "Rincian": "48000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 8801000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Kegiatan HUT17 9 Agustus 2024",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1194000,
+      "Saldo": 7607000
+    },
+    {
+      "Tanggal": "07-Ags-2024",
+      "Uraian": "Biaya Dukungan Tim Acara HUT17",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1028000,
+      "Saldo": 6579000
+    },
+    {
+      "Tanggal": "08-Ags-2024",
+      "Uraian": "Biaya Dukungan Tim Acara HUT17",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 500000,
+      "Saldo": 6079000
+    },
+    {
+      "Tanggal": "18-Ags-2024",
+      "Uraian": "Dana resam (TK Agustus 2024)",
+      "Rincian": "nan",
+      "Kredit": 3635000,
+      "Debit": 0,
+      "Saldo": 9714000
+    },
+    {
+      "Tanggal": "21-Ags-2024",
+      "Uraian": "Konsumsi Gorengan",
+      "Rincian": "250000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 9714000
+    },
+    {
+      "Tanggal": "21-Ags-2024",
+      "Uraian": "Konsumsi Rebusan",
+      "Rincian": "600000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 9714000
+    },
+    {
+      "Tanggal": "21-Ags-2024",
+      "Uraian": "Konsumsi Bakwan Kuah",
+      "Rincian": "500000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 9714000
+    },
+    {
+      "Tanggal": "21-Ags-2024",
+      "Uraian": "Minum Es Sirup, Es Batu, Gelas Plastik dll",
+      "Rincian": "767000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 9714000
+    },
+    {
+      "Tanggal": "21-Ags-2024",
+      "Uraian": "Kegiatan HUT17 23 Agustus 2024",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 2117000,
+      "Saldo": 7597000
+    },
+    {
+      "Tanggal": "2024-09-05 00:00:00",
+      "Uraian": "Dana resam (TK September 2024)",
+      "Rincian": "nan",
+      "Kredit": 3635000,
+      "Debit": 0,
+      "Saldo": 11232000
+    },
+    {
+      "Tanggal": "2024-09-23 00:00:00",
+      "Uraian": "Konsumsi donor darah 24 Sep 2024",
+      "Rincian": "720000",
+      "Kredit": 0,
+      "Debit": 720000,
+      "Saldo": 10512000
+    },
+    {
+      "Tanggal": "2024-09-23 00:00:00",
+      "Uraian": "Konsumsi HSN 26 Sep 2024",
+      "Rincian": "1400000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10512000
+    },
+    {
+      "Tanggal": "2024-09-24 00:00:00",
+      "Uraian": "Tumpeng 26 Sep 2024",
+      "Rincian": "703500",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10512000
+    },
+    {
+      "Tanggal": "2024-09-24 00:00:00",
+      "Uraian": "Kegiatan HSN 26 Sep 2024",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 2103500,
+      "Saldo": 8408500
+    },
+    {
+      "Tanggal": "14-Okt-2024",
+      "Uraian": "Dana resam (TK Oktober 2024)",
+      "Rincian": "nan",
+      "Kredit": 3635000,
+      "Debit": 0,
+      "Saldo": 12043500
+    },
+    {
+      "Tanggal": "2024-11-13 00:00:00",
+      "Uraian": "Dana resam (TK November 2024)",
+      "Rincian": "nan",
+      "Kredit": 3535000,
+      "Debit": 0,
+      "Saldo": 15578500
+    },
+    {
+      "Tanggal": "2024-11-13 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 15.578.500)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 4673550,
+      "Saldo": 10904950
+    },
+    {
+      "Tanggal": "9-Des-2024",
+      "Uraian": "Dana resam (TK Desember 2024)",
+      "Rincian": "nan",
+      "Kredit": 3735000,
+      "Debit": 0,
+      "Saldo": 14639950
+    },
+    {
+      "Tanggal": "10-Des-2024",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 3.735.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1120500,
+      "Saldo": 13519450
+    },
+    {
+      "Tanggal": "2025-01-09 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 3.760.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1128000,
+      "Saldo": 12391450
+    },
+    {
+      "Tanggal": "2025-01-15 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (20% dari 3.760.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 752000,
+      "Saldo": 11639450
+    },
+    {
+      "Tanggal": "2025-01-17 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1000000,
+      "Saldo": 10639450
+    },
+    {
+      "Tanggal": "2025-01-23 00:00:00",
+      "Uraian": "Nasi Kotak (Padang Pagi-Sore) 26 Pax",
+      "Rincian": "910000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10639450
+    },
+    {
+      "Tanggal": "2025-01-23 00:00:00",
+      "Uraian": "Kue Kotak 26 Pax",
+      "Rincian": "260000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10639450
+    },
+    {
+      "Tanggal": "2025-01-23 00:00:00",
+      "Uraian": "Tekwan 3 Kg",
+      "Rincian": "420000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10639450
+    },
+    {
+      "Tanggal": "2025-01-23 00:00:00",
+      "Uraian": "Bumbu tambahan tekwan",
+      "Rincian": "50000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10639450
+    },
+    {
+      "Tanggal": "2025-01-23 00:00:00",
+      "Uraian": "Air Mineral 1 Dus",
+      "Rincian": "22000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 10639450
+    },
+    {
+      "Tanggal": "2025-01-23 00:00:00",
+      "Uraian": "Konsumsi Donor darah 23 Januari 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1662000,
+      "Saldo": 8977450
+    },
+    {
+      "Tanggal": "2025-01-24 00:00:00",
+      "Uraian": "Dana resam (TK Januari 2025)",
+      "Rincian": "nan",
+      "Kredit": 3760000,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-14 00:00:00",
+      "Uraian": "Dana resam (TK Februari 2025)",
+      "Rincian": "nan",
+      "Kredit": 3760000,
+      "Debit": 0,
+      "Saldo": 16497450
+    },
+    {
+      "Tanggal": "2025-02-14 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 3760000,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Kacang Hijau 6 kg",
+      "Rincian": "144000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Kelapa 5 buah",
+      "Rincian": "70000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Plastik 4 lembar",
+      "Rincian": "5000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Gula Merah 2 bungkus",
+      "Rincian": "50000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Garam 2 bungkus",
+      "Rincian": "4000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Jahe",
+      "Rincian": "5000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Es Batu",
+      "Rincian": "10000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Gelas Plastik",
+      "Rincian": "12000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12737450
+    },
+    {
+      "Tanggal": "2025-02-21 00:00:00",
+      "Uraian": "Konsumsi SEJATI 21 Februari 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 300000,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-26 00:00:00",
+      "Uraian": "Spanduk",
+      "Rincian": "250000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-26 00:00:00",
+      "Uraian": "Kertas Nasi",
+      "Rincian": "18000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-27 00:00:00",
+      "Uraian": "Gula 2kg, Teh, Kopi",
+      "Rincian": "82000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-27 00:00:00",
+      "Uraian": "Daun Pisang",
+      "Rincian": "50000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-27 00:00:00",
+      "Uraian": "Kelapa Muda Ubi",
+      "Rincian": "13000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-27 00:00:00",
+      "Uraian": "Minyak Goreng 1Lt",
+      "Rincian": "20000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-27 00:00:00",
+      "Uraian": "Upah Lelah OS",
+      "Rincian": "88000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12437450
+    },
+    {
+      "Tanggal": "2025-02-27 00:00:00",
+      "Uraian": "Kegiatan Bedulang 27 Februari 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 521000,
+      "Saldo": 11916450
+    },
+    {
+      "Tanggal": "2025-03-11 00:00:00",
+      "Uraian": "Dana resam (TK Maret 2025)",
+      "Rincian": "nan",
+      "Kredit": 4020000,
+      "Debit": 0,
+      "Saldo": 15936450
+    },
+    {
+      "Tanggal": "2025-03-11 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial TK Maret 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 4020000,
+      "Saldo": 11916450
+    },
+    {
+      "Tanggal": "2025-03-20 00:00:00",
+      "Uraian": "Dana DWP untuk Kegiatan Buber 2025",
+      "Rincian": "nan",
+      "Kredit": 1000000,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Paket Makan kotak 160 pax",
+      "Rincian": "7600000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Snack Anak 61 pax",
+      "Rincian": "305000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Paket Makan Anak 61 pax",
+      "Rincian": "1830000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Gelas Plastik, Kresek dll",
+      "Rincian": "149000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Air Mineral, Gula Pasir",
+      "Rincian": "133000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Buah Jeruk Santang 2kg, Pisang",
+      "Rincian": "138000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Gelas Plastik Warna",
+      "Rincian": "20000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 12916450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Konsumsi Buka Puasa Bersama 21 Maret 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 10175000,
+      "Saldo": 2741450
+    },
+    {
+      "Tanggal": "2025-03-19 00:00:00",
+      "Uraian": "Spanduk Buka Puasa Bersama 21 Maret 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 125000,
+      "Saldo": 2616450
+    },
+    {
+      "Tanggal": "2025-03-21 00:00:00",
+      "Uraian": "Honor Ustad Buka Puasa Bersama 21 Maret 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 500000,
+      "Saldo": 2116450
+    },
+    {
+      "Tanggal": "2025-04-11 00:00:00",
+      "Uraian": "Krupuk Kemplang",
+      "Rincian": "210000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 2116450
+    },
+    {
+      "Tanggal": "2025-04-11 00:00:00",
+      "Uraian": "Gula, Kopi, Air Mineral dll",
+      "Rincian": "218400",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 2116450
+    },
+    {
+      "Tanggal": "2025-04-11 00:00:00",
+      "Uraian": "Konsumsi Halalbihalal 15 April 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 428400,
+      "Saldo": 1688050
+    },
+    {
+      "Tanggal": "2025-04-17 00:00:00",
+      "Uraian": "Dana resam (TK April 2025)",
+      "Rincian": "nan",
+      "Kredit": 3905000,
+      "Debit": 0,
+      "Saldo": 5593050
+    },
+    {
+      "Tanggal": "2025-04-17 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial TK April 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 3905000,
+      "Saldo": 1688050
+    },
+    {
+      "Tanggal": "2025-04-22 00:00:00",
+      "Uraian": "Bakwan Kuah",
+      "Rincian": "200000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 1688050
+    },
+    {
+      "Tanggal": "2025-04-22 00:00:00",
+      "Uraian": "Nasi Kotak 10 pax",
+      "Rincian": "270000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 1688050
+    },
+    {
+      "Tanggal": "2025-04-22 00:00:00",
+      "Uraian": "Air Mineral",
+      "Rincian": "24000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 1688050
+    },
+    {
+      "Tanggal": "2025-04-22 00:00:00",
+      "Uraian": "Konsumsi Donor Darah 22 April 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 494000,
+      "Saldo": 1194050
+    },
+    {
+      "Tanggal": "16-Mei-2025",
+      "Uraian": "Dana resam (TK Mei 2025)",
+      "Rincian": "nan",
+      "Kredit": 4080000,
+      "Debit": 0,
+      "Saldo": 5274050
+    },
+    {
+      "Tanggal": "16-Mei-2024",
+      "Uraian": "Disetor untuk Dana Sosial TK Mei 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 4080000,
+      "Saldo": 1194050
+    },
+    {
+      "Tanggal": "28-Mei-2025",
+      "Uraian": "Spanduk Pelepasan Purnabakti Ir. Ahmad Thamrin",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 180000,
+      "Saldo": 1014050
+    },
+    {
+      "Tanggal": "8-Juni-2025",
+      "Uraian": "Dana resam (TK Juni 2025)",
+      "Rincian": "nan",
+      "Kredit": 3905000,
+      "Debit": 0,
+      "Saldo": 4919050
+    },
+    {
+      "Tanggal": "9-Juni-2025",
+      "Uraian": "Disetor untuk Dana Sosial TK Juni 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 3905000,
+      "Saldo": 1014050
+    },
+    {
+      "Tanggal": "7-Juli-2025",
+      "Uraian": "Dana resam (TK Juli 2025)",
+      "Rincian": "nan",
+      "Kredit": 3905000,
+      "Debit": 0,
+      "Saldo": 4919050
+    },
+    {
+      "Tanggal": "7-Juli-2025",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 3.905.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1171500,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Bakwan Kuah",
+      "Rincian": "250000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Nasi Kotak 10 pax",
+      "Rincian": "272500",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Air Mineral",
+      "Rincian": "21300",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Kecap",
+      "Rincian": "26200",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Penyedap Rasa",
+      "Rincian": "6000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Sayuran",
+      "Rincian": "3000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 3747550
+    },
+    {
+      "Tanggal": "29-Juli-2025",
+      "Uraian": "Konsumsi Donor Darah 30 Juli 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 579000,
+      "Saldo": 3168550
+    },
+    {
+      "Tanggal": "11-Agustus-2025",
+      "Uraian": "Dana resam (TK Agustus 2025)",
+      "Rincian": "nan",
+      "Kredit": 3905000,
+      "Debit": 0,
+      "Saldo": 7073550
+    },
+    {
+      "Tanggal": "11-Agustus-2025",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 3.905.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1171500,
+      "Saldo": 5902050
+    },
+    {
+      "Tanggal": "11-Agustus-2025",
+      "Uraian": "Konsumsi HUT RI ke-80",
+      "Rincian": "1785000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 5902050
+    },
+    {
+      "Tanggal": "11-Agustus-2025",
+      "Uraian": "Hadiah Lomba",
+      "Rincian": "1013000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 5902050
+    },
+    {
+      "Tanggal": "11-Agustus-2025",
+      "Uraian": "Perlengkapan lomba",
+      "Rincian": "232944",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 5902050
+    },
+    {
+      "Tanggal": "25-Agustus-2025",
+      "Uraian": "Kegiatan Lomba HUT RI ke-80",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 3030944,
+      "Saldo": 2871106
+    },
+    {
+      "Tanggal": "29-Agustus-2025",
+      "Uraian": "Kegiatan Purnabakti Bpk Rizanal Mahmudin",
+      "Rincian": "608000",
+      "Kredit": 0,
+      "Debit": 608000,
+      "Saldo": 2263106
+    },
+    {
+      "Tanggal": "2025-09-10 00:00:00",
+      "Uraian": "Dana resam (TK September 2025)",
+      "Rincian": "nan",
+      "Kredit": 3905000,
+      "Debit": 0,
+      "Saldo": 6168106
+    },
+    {
+      "Tanggal": "2025-09-16 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 3.905.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1171500,
+      "Saldo": 4996606
+    },
+    {
+      "Tanggal": "2025-09-18 00:00:00",
+      "Uraian": "Umbi-umbian",
+      "Rincian": "400000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 4996606
+    },
+    {
+      "Tanggal": "2025-09-18 00:00:00",
+      "Uraian": "Gula pasir, The, Kopi, Air Mineral",
+      "Rincian": "119500",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 4996606
+    },
+    {
+      "Tanggal": "2025-09-18 00:00:00",
+      "Uraian": "Gelas Plastik",
+      "Rincian": "20000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 4996606
+    },
+    {
+      "Tanggal": "2025-09-18 00:00:00",
+      "Uraian": "Nasi Kotak Polisi",
+      "Rincian": "52000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 4996606
+    },
+    {
+      "Tanggal": "2025-09-16 00:00:00",
+      "Uraian": "Kegiatan Jalan Sehat HSN 19 Sep 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 591500,
+      "Saldo": 4405106
+    },
+    {
+      "Tanggal": "2025-09-22 00:00:00",
+      "Uraian": "Gula pasir, The, Kopi, Air Mineral",
+      "Rincian": "138000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 4405106
+    },
+    {
+      "Tanggal": "2025-09-22 00:00:00",
+      "Uraian": "Kegiatan Bedulang 26 Sep 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 138000,
+      "Saldo": 4267106
+    },
+    {
+      "Tanggal": "2025-10-15 00:00:00",
+      "Uraian": "Dana resam (TK Oktober 2025)",
+      "Rincian": "nan",
+      "Kredit": 3940000,
+      "Debit": 0,
+      "Saldo": 8207106
+    },
+    {
+      "Tanggal": "2025-10-15 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (30% dari 3.940.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1182000,
+      "Saldo": 7025106
+    },
+    {
+      "Tanggal": "2025-10-28 00:00:00",
+      "Uraian": "Nasi Ayam Rawit 13 pax",
+      "Rincian": "286000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 7025106
+    },
+    {
+      "Tanggal": "2025-10-28 00:00:00",
+      "Uraian": "Air Mineral",
+      "Rincian": "21300",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 7025106
+    },
+    {
+      "Tanggal": "2025-10-28 00:00:00",
+      "Uraian": "Teh dan Kopi",
+      "Rincian": "45500",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 7025106
+    },
+    {
+      "Tanggal": "2025-10-28 00:00:00",
+      "Uraian": "Mie Kuah",
+      "Rincian": "300000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 7025106
+    },
+    {
+      "Tanggal": "2025-10-28 00:00:00",
+      "Uraian": "Konsumsi Donor Darah 31 Oktober 2025",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 652800,
+      "Saldo": 6372306
+    },
+    {
+      "Tanggal": "2025-11-12 00:00:00",
+      "Uraian": "Dana resam (TK November 2025)",
+      "Rincian": "nan",
+      "Kredit": 3910000,
+      "Debit": 0,
+      "Saldo": 10282306
+    },
+    {
+      "Tanggal": "2025-11-12 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (100% dari 3.910.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 3910000,
+      "Saldo": 6372306
+    },
+    {
+      "Tanggal": "2025-12-09 00:00:00",
+      "Uraian": "Dana resam (TK Desember 2025)",
+      "Rincian": "nan",
+      "Kredit": 4025000,
+      "Debit": 0,
+      "Saldo": 10397306
+    },
+    {
+      "Tanggal": "2025-12-09 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (100% dari 4.025.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 4025000,
+      "Saldo": 6372306
+    },
+    {
+      "Tanggal": "2025-12-29 00:00:00",
+      "Uraian": "Dana resam (Sisa Lembur Pegawai)",
+      "Rincian": "nan",
+      "Kredit": 1320000,
+      "Debit": 0,
+      "Saldo": 7692306
+    },
+    {
+      "Tanggal": "2026-01-08 00:00:00",
+      "Uraian": "Dana resam (TK Januari 2026)",
+      "Rincian": "nan",
+      "Kredit": 2455000,
+      "Debit": 0,
+      "Saldo": 10147306
+    },
+    {
+      "Tanggal": "2026-01-08 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (50% dari 3.775.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1887500,
+      "Saldo": 8259806
+    },
+    {
+      "Tanggal": "2026-01-20 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1000000,
+      "Saldo": 7259806
+    },
+    {
+      "Tanggal": "2026-01-22 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 500000,
+      "Saldo": 6759806
+    },
+    {
+      "Tanggal": "2026-02-09 00:00:00",
+      "Uraian": "Dana resam (TK Februari 2026)",
+      "Rincian": "nan",
+      "Kredit": 3560000,
+      "Debit": 0,
+      "Saldo": 10319806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (50% dari 3.560.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 1780000,
+      "Saldo": 8539806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 2000000,
+      "Saldo": 6539806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Snack Pagi Tambahan",
+      "Rincian": "183000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6539806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Snack Sore Tambahan",
+      "Rincian": "403000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6539806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Makan Siang 110 pax",
+      "Rincian": "3850000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6539806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Buah",
+      "Rincian": "225000",
+      "Kredit": 0,
+      "Debit": 0,
+      "Saldo": 6539806
+    },
+    {
+      "Tanggal": "2026-02-10 00:00:00",
+      "Uraian": "Kegiatan Pisah Sambut Kepala BPS 10 Februari 2026",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 4661000,
+      "Saldo": 1878806
+    },
+    {
+      "Tanggal": "2026-03-06 00:00:00",
+      "Uraian": "Kegiatan RB",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 150000,
+      "Saldo": 1728806
+    },
+    {
+      "Tanggal": "2026-03-09 00:00:00",
+      "Uraian": "Dana resam (TK Maret 2026)",
+      "Rincian": "nan",
+      "Kredit": 4130000,
+      "Debit": 0,
+      "Saldo": 5858806
+    },
+    {
+      "Tanggal": "2026-03-10 00:00:00",
+      "Uraian": "Disetor untuk Dana Sosial (50% dari 4.130.000)",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 2065000,
+      "Saldo": 3793806
+    },
+    {
+      "Tanggal": "2026-03-10 00:00:00",
+      "Uraian": "Kegiatan Buka Puasa Bersama 6 Mar 2026",
+      "Rincian": "nan",
+      "Kredit": 0,
+      "Debit": 3000000,
+      "Saldo": 793806
+    }
+  ],
+  "events": [
+    {
+      "tanggal": "2025-03-21",
+      "kegiatan": "Buka Puasa Bersama",
+      "nominal": 10175000
+    },
+    {
+      "tanggal": "2026-02-10",
+      "kegiatan": "Pisah Sambut Kepala BPS",
+      "nominal": 4661000
+    },
+    {
+      "tanggal": "2025-08-25",
+      "kegiatan": "Lomba HUT RI ke-80",
+      "nominal": 3030944
+    },
+    {
+      "tanggal": "2024-08-07",
+      "kegiatan": "Kegiatan HUT17 Agustus 2024",
+      "nominal": 2722000
+    }
+  ],
+  "highlight": {
+    "note": "Data transaksi dan jadwal dari sheet Pengeluaran",
+    "tableRows": 149
+  }
+}
