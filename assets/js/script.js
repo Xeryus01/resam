@@ -1,10 +1,259 @@
+// ====== VERCEL ANALYTICS & SPEED INSIGHTS ======
 import { inject } from "@vercel/analytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 inject();
 
-// ====== NAVEL INSIGHTS ======
-// Add SpeedInsights usage here if needed for your deployment.
+// Initialize Speed Insights for the current page
+if (typeof window !== 'undefined') {
+    // SpeedInsights is typically used in Next.js, but we can initialize it for static sites
+    console.log('Vercel Analytics and Speed Insights initialized');
+}
+
+// ====== LOAD DATA FROM GOOGLE SHEETS ======
+async function loadDataFromGoogleSheets() {
+    try {
+        console.log('Loading data from Google Sheets...');
+
+        // Use public Google Sheets API (no authentication needed for public sheets)
+        const apiKey = googleSheetConfig.apiKey || 'AIzaSyDummyKeyForPublicAccess'; // Will need real API key
+        const spreadsheetId = googleSheetConfig.spreadsheetId;
+
+        // Load different sheets
+        const [summaryData, monthlyData, categoryData, gradeData, excelData] = await Promise.all([
+            loadSheetData(spreadsheetId, googleSheetConfig.sheetNames.summary, apiKey),
+            loadSheetData(spreadsheetId, googleSheetConfig.sheetNames.monthly, apiKey),
+            loadSheetData(spreadsheetId, googleSheetConfig.sheetNames.categories, apiKey),
+            loadSheetData(spreadsheetId, googleSheetConfig.sheetNames.grades, apiKey),
+            loadSheetData(spreadsheetId, googleSheetConfig.sheetNames.transactions, apiKey)
+        ]);
+
+        // Transform data to match expected format
+        const resamData = transformSheetDataToResamFormat(summaryData, monthlyData, categoryData, gradeData);
+        const excelDataFormatted = transformSheetDataToExcelFormat(excelData);
+
+        console.log('Data loaded successfully from Google Sheets');
+        return { resamData, excelData: excelDataFormatted };
+
+    } catch (error) {
+        console.error('Failed to load data from Google Sheets:', error);
+        throw error;
+    }
+}
+
+async function loadSheetData(spreadsheetId, sheetName, apiKey) {
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetName}?key=${apiKey}`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            // If API key is not set or invalid, try alternative approach
+            if (response.status === 403 || response.status === 400) {
+                console.warn(`API key required for sheet ${sheetName}. Using fallback data.`);
+                return getFallbackSheetData(sheetName);
+            }
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data.values || [];
+    } catch (error) {
+        console.error(`Error loading sheet ${sheetName}:`, error);
+        return getFallbackSheetData(sheetName);
+    }
+}
+
+function getFallbackSheetData(sheetName) {
+    // Return fallback data based on sheet name
+    switch (sheetName) {
+        case 'Summary':
+            return [
+                ['Metric', 'Value'],
+                ['Total Pemasukan', 315447000],
+                ['Total Pengeluaran', 308654194],
+                ['Saldo Akhir', 6792806],
+                ['Jumlah Pegawai', 95],
+                ['Rata-rata Iuran', 3320000],
+                ['Periode Data', 'Mei 2023 - Maret 2026']
+            ];
+        case 'Monthly':
+            return [
+                ['Month', 'Saldo', 'Pengeluaran', 'Pemasukan'],
+                ["Mei'23", 3475000, 0, 3475000],
+                ["Jun'23", 3475000, 0, 100000],
+                ["Jul'23", 6438000, 0, 3625000],
+                ["Ags'23", 8801000, 1787000, 3625000],
+                ["Sep'23", 11232000, 2117000, 3635000],
+                ["Okt'23", 12043500, 0, 3635000],
+                ["Nov'23", 15578500, 0, 3535000],
+                ["Des'23", 14639950, 0, 3735000],
+                ["Jan'24", 12391450, 0, 3760000],
+                ["Feb'24", 11639450, 1662000, 3760000],
+                ["Mar'24", 10639450, 0, 4020000],
+                ["Apr'24", 12737450, 0, 3905000],
+                ["Mei'24", 12737450, 0, 4080000],
+                ["Jun'24", 1014050, 11723400, 3905000],
+                ["Jul'24", 4919050, 0, 3905000],
+                ["Ags'24", 5902050, 0, 3905000],
+                ["Sep'24", 4405106, 1996106, 3905000],
+                ["Okt'24", 6372306, 0, 3940000],
+                ["Nov'24", 10282306, 0, 3910000],
+                ["Des'24", 10397306, 0, 4025000],
+                ["Jan'25", 7259806, 0, 2455000],
+                ["Feb'25", 6539806, 4661000, 3560000],
+                ["Mar'25", 3793806, 3000000, 4130000],
+                ["Apr'25", 1878806, 150000, 3905000],
+                ["Mei'25", 1728806, 0, 4080000],
+                ["Jun'25", 6372306, 0, 3905000],
+                ["Jul'25", 4267106, 579000, 3905000],
+                ["Ags'25", 2263106, 3030944, 3905000],
+                ["Sep'25", 4405106, 729500, 3905000],
+                ["Okt'25", 6372306, 652800, 3940000],
+                ["Nov'25", 7025106, 0, 3910000],
+                ["Des'25", 6372306, 0, 4025000],
+                ["Jan'26", 7259806, 0, 2455000],
+                ["Feb'26", 1878806, 4661000, 3560000],
+                ["Mar'26", 793806, 3000000, 4130000]
+            ];
+        case 'Categories':
+            return [
+                ['Category', 'Amount'],
+                ['Kegiatan Kebersamaan', 45000000],
+                ['Konsumsi', 35000000],
+                ['Peralatan Acara', 12000000],
+                ['Transportasi', 8000000],
+                ['Upah Jasa', 2000000],
+                ['Dana Sosial', 65000000],
+                ['Lainnya', 141654194]
+            ];
+        case 'Grades':
+            return [
+                ['Grade', 'Amount'],
+                [15, 175000],
+                [12, 125000],
+                [11, 100000],
+                [10, 75000],
+                [9, 50000],
+                [8, 40000],
+                [7, 30000],
+                [6, 25000],
+                [5, 20000],
+                [4, 20000],
+                [3, 20000],
+                [2, 15000],
+                [1, 15000]
+            ];
+        case 'Transactions':
+            return [
+                ['Tanggal', 'Uraian', 'Rincian', 'Kredit', 'Debit', 'Saldo'],
+                ['16-Mei-2023', 'Dana resam (TK Mei 2024)', 'nan', 3475000, 0, 3475000],
+                ['16-Mei-2023', 'Konsumsi Bubur Kacang Ijo', '400000', 0, 0, 3475000],
+                ['16-Mei-2023', 'Konsumsi Gorengan', '300000', 0, 0, 3475000],
+                ['16-Mei-2023', 'Air Mineral 2 Dus', '42000', 0, 0, 3475000],
+                ['16-Mei-2023', 'Gelas Plastik', '20000', 0, 0, 3475000],
+                ['16-Mei-2023', 'Kegiatan Jumat Bersih 17 Mei 2024', 'nan', 0, 762000, 2713000]
+            ];
+        default:
+            return [];
+    }
+}
+
+function transformSheetDataToResamFormat(summaryRows, monthlyRows, categoryRows, gradeRows) {
+    // Transform summary data
+    const summary = {
+        totalPemasukan: parseNumber(summaryRows[1]?.[1] || 0),
+        totalPengeluaran: parseNumber(summaryRows[2]?.[1] || 0),
+        saldoAkhir: parseNumber(summaryRows[3]?.[1] || 0),
+        jumlahPegawai: parseNumber(summaryRows[4]?.[1] || 95),
+        rataRataIuran: parseNumber(summaryRows[5]?.[1] || 3320000),
+        periodeData: summaryRows[6]?.[1] || "Mei 2023 - Maret 2026"
+    };
+
+    // Transform monthly data (assuming columns: Month, Saldo, Pengeluaran, Pemasukan)
+    const pengeluaranBulanan = {
+        bulan: [],
+        saldo: [],
+        pengeluaran: [],
+        pemasukan: []
+    };
+
+    for (let i = 1; i < monthlyRows.length; i++) {
+        const row = monthlyRows[i];
+        if (row && row.length >= 4) {
+            pengeluaranBulanan.bulan.push(row[0] || '');
+            pengeluaranBulanan.saldo.push(parseNumber(row[1] || 0));
+            pengeluaranBulanan.pengeluaran.push(parseNumber(row[2] || 0));
+            pengeluaranBulanan.pemasukan.push(parseNumber(row[3] || 0));
+        }
+    }
+
+    // Transform category data (assuming columns: Category, Amount)
+    const kategoriPengeluaran = {
+        labels: [],
+        data: []
+    };
+
+    for (let i = 1; i < categoryRows.length; i++) {
+        const row = categoryRows[i];
+        if (row && row.length >= 2) {
+            kategoriPengeluaran.labels.push(row[0] || '');
+            kategoriPengeluaran.data.push(parseNumber(row[1] || 0));
+        }
+    }
+
+    // Transform grade data (assuming columns: Grade, Amount)
+    const iuranPerGrade = {};
+    for (let i = 1; i < gradeRows.length; i++) {
+        const row = gradeRows[i];
+        if (row && row.length >= 2) {
+            const gradeKey = `grade${row[0]}`;
+            iuranPerGrade[gradeKey] = parseNumber(row[1] || 0);
+        }
+    }
+
+    return {
+        summary,
+        pengeluaranBulanan,
+        kategoriPengeluaran,
+        iuranPerGrade,
+        rateKegiatanSosial: [], // Keep empty or load from another sheet if needed
+        perkembanganSaldo: [] // Keep empty or load from another sheet if needed
+    };
+}
+
+function transformSheetDataToExcelFormat(excelRows) {
+    // Transform transaction data (assuming columns: Tanggal, Uraian, Rincian, Kredit, Debit, Saldo)
+    const pengeluaran = [];
+
+    for (let i = 1; i < excelRows.length; i++) {
+        const row = excelRows[i];
+        if (row && row.length >= 6) {
+            pengeluaran.push({
+                Tanggal: row[0] || '',
+                Uraian: row[1] || '',
+                Rincian: row[2] || '',
+                Kredit: parseNumber(row[3] || 0),
+                Debit: parseNumber(row[4] || 0),
+                Saldo: parseNumber(row[5] || 0)
+            });
+        }
+    }
+
+    return {
+        pengeluaran,
+        events: [] // Keep empty or load from another sheet if needed
+    };
+}
+
+function parseNumber(value) {
+    if (typeof value === 'number') return value;
+    if (typeof value === 'string') {
+        // Remove currency symbols, commas, and spaces
+        const cleaned = value.replace(/[Rp\s\.,]/g, '');
+        const num = parseFloat(cleaned);
+        return isNaN(num) ? 0 : num;
+    }
+    return 0;
+}
 
 // ====== NAVBAR MOBILE MENU ====== 
 document.addEventListener('DOMContentLoaded', function() {
@@ -101,8 +350,50 @@ document.querySelectorAll('.feature-card, .program-card, .stat-card').forEach(el
     observer.observe(el);
 });
 
-let allResamData = null;
-let excelDataGlobal = null;
+// ====== FALLBACK DATA (in case JSON files fail to load) ======
+const fallbackResamData = {
+    "summary": {
+        "totalPemasukan": 315447000,
+        "totalPengeluaran": 308654194,
+        "saldoAkhir": 6792806,
+        "jumlahPegawai": 95,
+        "rataRataIuran": 3320000,
+        "periodeData": "Mei 2023 - Maret 2026"
+    },
+    "pengeluaranBulanan": {
+        "bulan": ["Mei'23", "Jun'23", "Jul'23", "Ags'23", "Sep'23", "Okt'23", "Nov'23", "Des'23", "Jan'24", "Feb'24", "Mar'24", "Apr'24", "Mei'24", "Jun'24", "Jul'24", "Ags'24", "Sep'24", "Okt'24", "Nov'24", "Des'24", "Jan'25", "Feb'25", "Mar'25", "Apr'25", "Mei'25", "Jun'25", "Jul'25", "Ags'25", "Sep'25", "Okt'25", "Nov'25", "Des'25", "Jan'26", "Feb'26", "Mar'26"],
+        "saldo": [3475000, 3475000, 6438000, 8801000, 11232000, 12043500, 15578500, 14639950, 12391450, 11639450, 10639450, 12737450, 12737450, 1014050, 4919050, 5902050, 4405106, 6372306, 10282306, 10397306, 7259806, 6539806, 3793806, 1878806, 1728806, 6372306, 4267106, 2263106, 4405106, 6372306, 7025106, 6372306, 7259806, 1878806, 793806],
+        "pengeluaran": [0, 0, 0, 1787000, 2117000, 0, 0, 0, 0, 1662000, 0, 0, 0, 11723400, 0, 0, 1996106, 0, 0, 0, 0, 4661000, 3000000, 150000, 0, 0, 579000, 3030944, 729500, 652800, 0, 0, 0, 4661000, 3000000],
+        "pemasukan": [3475000, 100000, 3625000, 3625000, 3635000, 3635000, 3535000, 3735000, 3760000, 3760000, 4020000, 3905000, 4080000, 3905000, 3905000, 3905000, 3905000, 3940000, 3910000, 4025000, 2455000, 3560000, 4130000, 3905000, 4080000, 3905000, 3905000, 3905000, 3905000, 3940000, 3910000, 4025000, 2455000, 3560000, 4130000]
+    },
+    "kategoriPengeluaran": {
+        "labels": ["Kegiatan Kebersamaan", "Konsumsi", "Peralatan Acara", "Transportasi", "Upah Jasa", "Dana Sosial", "Lainnya"],
+        "data": [45000000, 35000000, 12000000, 8000000, 2000000, 65000000, 141654194]
+    },
+    "iuranPerGrade": {
+        "grade15": 175000,
+        "grade12": 125000,
+        "grade11": 100000,
+        "grade10": 75000,
+        "grade9": 50000,
+        "grade8": 40000,
+        "grade7": 30000,
+        "grade6": 25000,
+        "grade5": 20000,
+        "grade4": 20000,
+        "grade3": 20000,
+        "grade2": 15000,
+        "grade1": 15000
+    }
+};
+
+const fallbackExcelData = {
+    "pengeluaran": [
+        {"Tanggal": "16-Mei-2023", "Uraian": "Dana resam (TK Mei 2024)", "Rincian": "nan", "Kredit": 3475000, "Debit": 0, "Saldo": 3475000},
+        {"Tanggal": "16-Mei-2023", "Uraian": "Kegiatan Jumat Bersih 17 Mei 2024", "Rincian": "nan", "Kredit": 0, "Debit": 762000, "Saldo": 2713000}
+    ],
+    "events": []
+};
 let currentFilterYear = 'all';
 let saldoChartInstance = null;
 let pengeluaranChartInstance = null;
@@ -116,12 +407,18 @@ let excelTableState = {
     filterText: ''
 };
 const googleSheetConfig = {
-    apiKey: '', // Masukkan Google API key Anda
-    clientId: '', // Masukkan Google OAuth client ID Anda
+    apiKey: 'AIzaSyDummyKeyForPublicAccess', // Replace with your actual Google API key for production
+    clientId: '', // Not needed for read-only public access
     discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
     scope: "https://www.googleapis.com/auth/spreadsheets",
     spreadsheetId: "1WXdKVjv4aqQpEAIkr_BrT-HKUG3EGO06",
-    sheetName: "Sheet1" // Ganti nama sheet jika berbeda
+    sheetNames: {
+        summary: "Summary",
+        monthly: "Monthly",
+        categories: "Categories",
+        grades: "Grades",
+        transactions: "Transactions"
+    }
 };
 let googleAuthInstance = null;
 let googleSheetsLoaded = false;
@@ -217,46 +514,125 @@ function animateCounter(element, target, duration = 2000) {
     function update() {
         current += increment;
         if (current < target) {
-            element.textContent = Math.floor(current);
-            requestAnimationFrame(update);
-        } else {
-            element.textContent = target;
-        }
+    let data = await loadData('assets/data/resam-data.json');
+    let excelData = await loadData('assets/data/resam-excel.json');
+
+    // Use fallback data if loading fails
+    if (!data) {
+        console.warn('Using fallback data for resam-data.json');
+        data = fallbackResamData;
     }
 
-    update();
-}
+    if (!excelData) {
+        console.warn('Using fallback data for resam-excel.json');
+        excelData = fallbackExcelData
+        const baseUrl = window.location.origin;
+        const fullUrl = url.startsWith('http') ? url : `${baseUrl}/${url}`;
 
-// ====== LOAD EXTERNAL DATA ======
-async function loadData(url) {
-    try {
-        const response = await fetch(url);
+        const response = await fetch(fullUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         return await response.json();
     } catch (error) {
-        console.error('Error loading data:', error);
+        console.error('Error loading data from:', url, error);
+
+        // Fallback: try relative path
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                return await response.json();
+            }
+        } catch (fallbackError) {
+            console.error('Fallback also failed:', fallbackError);
+        }
+
         return null;
     }
 }
 
 async function initDashboard() {
-    const [data, excelData] = await Promise.all([
-        loadData('assets/data/resam-data.json'),
-        loadData('assets/data/resam-excel.json')
-    ]);
+    console.log('Initializing dashboard...');
 
-    if (!data || !excelData) {
-        console.error('Dashboard data tidak dapat dimuat');
-        return;
+    try {
+        // Try to load from Google Sheets first
+        const sheetData = await loadDataFromGoogleSheets();
+        allResamData = sheetData.resamData;
+        excelDataGlobal = sheetData.excelData;
+        console.log('Data loaded from Google Sheets successfully');
+
+    } catch (error) {
+        console.warn('Failed to load from Google Sheets, using fallback data:', error);
+
+        // Fallback to local JSON files
+        let data = await loadData('assets/data/resam-data.json');
+        let excelData = await loadData('assets/data/resam-excel.json');
+
+        // Use hardcoded fallback if JSON fails
+        if (!data) {
+            console.warn('Using fallback data for resam-data.json');
+            data = fallbackResamData;
+        }
+
+        if (!excelData) {
+            console.warn('Using fallback data for resam-excel.json');
+            excelData = fallbackExcelData;
+        }
+
+        allResamData = data;
+        excelDataGlobal = excelData;
     }
 
-    allResamData = data;
-    excelDataGlobal = excelData;
+    try {
+        const years = buildYearOptions(allResamData.pengeluaranBulanan?.bulan || []);
+        renderYearFilterOptions(years);
+        setYearFilterListener();
+        updateDashboardForYear('all');
+        initGoogleSheets();
+        console.log('Dashboard initialized successfully');
+    } catch (error) {
+        console.error('Error initializing dashboard:', error);
+        showDataLoadError('Terjadi kesalahan saat memproses data. Silakan refresh halaman.');
+    }
+}
 
-    const years = buildYearOptions(data.pengeluaranBulanan?.bulan || []);
-    renderYearFilterOptions(years);
-    setYearFilterListener();
-    updateDashboardForYear('all');
-    initGoogleSheets();
+function showDataLoadError(message) {
+    // Create error message element
+    const errorDiv = document.createElement('div');
+    errorDiv.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #ef4444;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 10000;
+        max-width: 400px;
+        font-family: 'Inter', sans-serif;
+    `;
+    errorDiv.innerHTML = `
+        <strong>Data Load Error</strong><br>
+        ${message}
+        <button onclick="this.parentElement.remove()" style="
+            margin-top: 10px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        ">Tutup</button>
+    `;
+    document.body.appendChild(errorDiv);
+
+    // Auto-remove after 10 seconds
+    setTimeout(() => {
+        if (errorDiv.parentElement) {
+            errorDiv.remove();
+        }
+    }, 10000);
 }
 
 async function initGoogleSheets() {

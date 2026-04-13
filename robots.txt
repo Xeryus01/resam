@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://babel.bps.go.id/resam-dansos/sitemap.xml
+Sitemap: https://resam-bps.vercel.app/sitemap.xml
 
 # Disallow admin and private areas if any
 Disallow: /admin/

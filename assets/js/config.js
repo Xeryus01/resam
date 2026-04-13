@@ -9,7 +9,7 @@ const CONFIG = {
         name: "BPS Provinsi Kepulauan Bangka Belitung",
         short_name: "RESAM & DANSOS",
         location: "Pangkal Pinang, Kepulauan Bangka Belitung",
-        website: "https://babel.bps.go.id"
+        website: "https://resam-bps.vercel.app/"
     },
 
     // Contact Information
@@ -24,7 +24,7 @@ const CONFIG = {
     external_links: {
         resam_data: "http://s.bps.go.id/RESAM1900",
         dansos_data: "http://s.bps.go.id/dansosBabelBPS",
-        main_website: "https://babel.bps.go.id"
+        main_website: "https://resam-bps.vercel.app/"
     },
 
     // Theme Colors
