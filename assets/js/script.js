@@ -1,3 +1,11 @@
+import { inject } from "@vercel/analytics";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+inject();
+
+// ====== NAVEL INSIGHTS ======
+// Add SpeedInsights usage here if needed for your deployment.
+
 // ====== NAVBAR MOBILE MENU ====== 
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
