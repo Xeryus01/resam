@@ -407,7 +407,7 @@ let excelTableState = {
     filterText: ''
 };
 const googleSheetConfig = {
-    apiKey: 'AIzaSyDummyKeyForPublicAccess', // Replace with your actual Google API key for production
+    apiKey: 'AIzaSyASWSbYFuf3XoEILFNwMNLC_E5dHShoA6A', // Replace with your actual Google API key for production
     clientId: '', // Not needed for read-only public access
     discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
     scope: "https://www.googleapis.com/auth/spreadsheets",
